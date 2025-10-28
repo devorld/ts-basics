@@ -6,18 +6,22 @@ function AdapterPage() {
 `;
 
 //region pattern code
-  interface AdvancedConsole {
+
+  /**
+   * new (interface)
+   */
+  interface AdaptedConsole {
     print(message: string): void;
   }
 
-  const advancedConsole: AdvancedConsole = Object.assign(Object.create(console), {
+  const adaptedConsole: AdaptedConsole = {
     print(message: string) {
-      (this as unknown as Console).log(new Date().toISOString().split(/[TZ]/)[1], message);
+      globalThis.console.log(new Date().toISOString().split(/[TZ]/)[1], message);
     },
-  });
+  };
 //endregion
 
-  advancedConsole.print('test adapter');
+  adaptedConsole.print('test adapter - new');
 }
 
 export { AdapterPage };

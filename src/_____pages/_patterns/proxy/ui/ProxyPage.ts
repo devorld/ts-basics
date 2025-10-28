@@ -6,14 +6,18 @@ function ProxyPage() {
 `;
 
 //region pattern code
-  const console = new globalThis.Proxy(globalThis.console, {
+
+  /**
+   * old (interface)
+   */
+  const console: Console = new globalThis.Proxy(globalThis.console, {
     get(target, prop, receiver) {
       if (typeof prop === "string" && ['log', 'warn'].includes(prop)) {
         return target.log.bind(receiver, new Date().toISOString().split(/[TZ]/)[1]);
       }
     },
   });
-  console.log('test proxy');
+  console.log('test proxy - old interface and with changes in functionality');
 
 //endregion
 }
