@@ -29,8 +29,6 @@ class Router {
     const pages = await this.pagesPromise;
     const render = pages[this.getPageID()];
 
-    console.dir(pages);
-
     render?.();
   }
 }

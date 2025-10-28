@@ -1,6 +1,6 @@
-import { createMemoization } from '../../../__entities/patterns/structural/Memoization/memoizator.ts';
+import { createMemoization } from '../../../../__entities/patterns/structural/Memoization/memoizator.ts';
 
-import type { Counter } from '../../../__entities/storages/Counter.ts';
+import type { Counter } from '../../../../__entities/storages/Counter.ts';
 
 import './styles.css';
 

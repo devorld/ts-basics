@@ -16,7 +16,13 @@ const siteNavigationMenu = `
             <strong>Structural</strong> <small>- зависимости между компонентами</small>
             <ul>
               <li>
-                <a href="/memoization">Memoization <small>by closure idiomatic solution</small></a>
+                <a href="/adapter">Adapter</a>
+              </li>
+              <li>
+                <a href="/proxy">Proxy</a> <small>by Proxy object from API</small>
+              </li>
+              <li>
+                <a href="/memoization">Memoization</a> <small>by closure idiomatic solution</small>
               </li>
             </ul>
           </li>
