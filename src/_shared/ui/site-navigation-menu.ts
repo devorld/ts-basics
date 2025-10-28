@@ -22,7 +22,10 @@ const siteNavigationMenu = `
                 <a href="/decorator">(same+ interface) Decorator</a>
               </li>
               <li>
-                <a href="/adapter">(other interface) Adapter</a>
+                <a href="/adapter">(other similar interface) Adapter</a>
+              </li>
+              <li>
+                <a href="/facade">(new basic interface over complexity) Facade</a>
               </li>
               <li>
                 <a href="/memoization">Memoization</a> <small>by closure idiomatic solution</small>
